@@ -1,4 +1,5 @@
 ﻿using BookStore.Data;
+using BookStore.Helpers;
 using BookStore.Interfaces;
 using BookStore.Repository;
 
@@ -22,26 +23,11 @@ namespace BookStore
             do
             {
                 input = ConsoleHelper.Multiple.Choice(true, new ShopMenu());
-                switch ((ShopMenu)input)
+                switch((ShopMenu)input)
                 {
-                    case ShopMenu.Books:
-                        break;
-                    case ShopMenu.Authors:
-                        break;
-                    case ShopMenu.Categories:
-                        break;
-                    case ShopMenu.Orders:
-                        break;
-                    case ShopMenu.SearchAuthors:
-                        break;
-                    case ShopMenu.SearchBooks:
-                        break;
-                    case ShopMenu.Search Categories:
-                        break;
-                    case ShopMenu.SearchOrders:
-                        break;
+
                 }
-                } while (true);
+            } while (true);
         }
         static void Initialize()
         {
